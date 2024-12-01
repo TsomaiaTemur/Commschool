@@ -22,7 +22,7 @@ print(count)
 #taks 2
 
 response1 = requests.get(url1)
-"""
+
 while True:
     try:
         user_budget = float(input("Enter your budget: "))
@@ -38,7 +38,7 @@ amount_available = user_budget / float(response1.json()['bpi']['USD']['rate_floa
 
 print(f"you can afford {amount_available} BTC")
 
-"""
+
 #task 3
 name = input("Enter your name: ")
 url2 = f"https://api.agify.io/?name={name}"
